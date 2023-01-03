@@ -1,0 +1,81 @@
+header {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#cart {
+    width: 110px;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+}
+#cart img {
+    position: relative;
+    width: 100%;
+    top: 10px;
+}
+#cart p {
+    text-align: left;
+    font-size: large;
+}
+h1 {
+    position: relative;
+    margin: auto;
+}
+.container, .shop {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+main div {
+    flex: 1;
+}
+section.tile {
+    margin: 20px auto;
+}
+section.tile img {
+    width: 85%;
+    max-width: 500px;
+}
+
+@media (min-width: 650px) {
+    .shop {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #cart {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        position: relative; 
+        height: 125px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header::before {
+        content: "";
+        background-image: url("imgs/book.jpg");
+        background-size: cover;
+        border-radius: 15px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.65;
+    }
+    header button {
+        position: relative;
+        margin-left: 10px;
+    }
+    .container {
+        flex-direction: row;
+    }
+    
+}
