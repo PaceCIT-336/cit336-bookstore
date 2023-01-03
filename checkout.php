@@ -23,13 +23,13 @@
     dictionary: 55
 */
 $cart = explode('|', htmlentities($_GET['cart']));
-$total = htmlentities($_GET['total']);
+$price = htmlentities($_GET['total']);
 echo "<p>Cart: </p><ol>";
 for ($i = 0; $i < count($cart); $i++) {
     $title = $cart[$i];
     echo "<li>$title</li>";
 }
-echo "</ol><p>Price: $$total</p>";
+echo "</ol><p>Price: $$price</p>";
 
 // you code here
 
