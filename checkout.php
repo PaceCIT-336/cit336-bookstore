@@ -29,7 +29,7 @@ for ($i = 0; $i < count($cart); $i++) {
     $title = $cart[$i];
     echo "<li>$title</li>";
 }
-echo "</ol><p>Total Price: $$total</p>";
+echo "</ol><p>Price: $$total</p>";
 
 // you code here
 
