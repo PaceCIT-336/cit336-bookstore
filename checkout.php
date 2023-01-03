@@ -24,12 +24,12 @@
 */
 $cart = explode('|', htmlentities($_GET['cart']));
 $total = htmlentities($_GET['total']);
-echo "Cart: <ol>";
+echo "<p>Cart: </p><ol>";
 for ($i = 0; $i < count($cart); $i++) {
     $title = $cart[$i];
     echo "<li>$title</li>";
 }
-echo "</ol><br>Total Price: $$total";
+echo "</ol><p>Total Price: $$total</p>";
 
 // you code here
 
