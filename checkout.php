@@ -30,7 +30,10 @@ $book_arr = array(
 
 // retrieve the cart items and total price passed from the shop page
 $cart = explode('|', htmlentities($_GET['cart']));
+$cartItems = count($cart); // number of items in the cart
 $price = htmlentities($_GET['total']);
+
+//calculate average price
 
 //print the information in table-like divs
 echo "<h2>Cart</h2><div class=\"table\"><div class=\"row header\"><div class=\"cell\">Title</div><div class=\"cell\">Price</div></div>";
