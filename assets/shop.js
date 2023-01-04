@@ -62,7 +62,7 @@ function addToCart(book) {
 
 function clearCart() {
     cart.clear()
-    cartItems.innerHTML = '&nbsp;'
+    cartItems.innerHTML = '0'
     cartTotal.innerHTML = `${cart.currentPrice}`
     cartInput.value = cart.getTitles()
     totalInput.value = cart.currentPrice
@@ -74,3 +74,6 @@ function darkMode() {
     body.style.backgroundColor = "black"
     body.style.color = "lightgray"
 }
+
+//force cart to clear in case back button was used
+clearCart();

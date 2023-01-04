@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/modal.css">
-    <script src="assets/shop.js" async></script>
 </head>
 <body>
 <header>
