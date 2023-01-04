@@ -13,21 +13,6 @@
 </header>
 <main id="checkoutpg">
 <?php
-/* 
-    PRICES
-    php: 60
-    python: 49
-    html: 35
-    dictionary: 55
-*/
-// create book array with the titles as keys and prices as the values
-$book_arr = array(
-    "Learning PHP, MySQL & JavaScript" => 60,
-    "Learning Python" => 49,
-    "HTML & CSS 9th Ed" => 35,
-    "American Heritage Dictionary" => 55,
-);
-
 // retrieve the cart items and total price passed from the shop page
 $cart = explode('|', htmlentities($_GET['cart']));
 $cartItems = count($cart); // number of items in the cart
