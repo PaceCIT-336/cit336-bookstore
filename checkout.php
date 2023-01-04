@@ -40,9 +40,10 @@ for ($i = 0; $i < count($cart); $i++) {
 }
 // calculate tax and echo it in a new table row 
 
+
 echo "<div class=\"row summary\"><div class=\"cell\">Total Price:</div><div class=\"cell\">$$price</div></div>";
 
-// 
+// thank the user for their purchase
 
 ?>
 </main>
