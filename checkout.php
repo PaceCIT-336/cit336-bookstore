@@ -14,9 +14,9 @@
 <main id="checkoutpg">
 <?php
 // retrieve the cart items and total price passed from the shop page
-$cart = explode('|', htmlentities($_GET['cart']));
+$cart = explode('|', htmlentities($_POST['cart']));
 $cartItems = count($cart); // number of items in the cart
-$price = htmlentities($_GET['total']);
+$price = htmlentities($_POST['total']);
 
 //calculate average price
 
@@ -33,6 +33,10 @@ echo "<div class=\"row summary\"><div class=\"cell\">Total Price:</div><div clas
 
 // thank the user for their purchase
 
+
+// this clears the session and ensures the cart is emptied for future shopping
+session_start();
+session_unset();
 ?>
 </main>
 </body>
