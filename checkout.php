@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <h1>Checkout</h1>
+    <h1><a href="index.php">Rainy Bookstore</a></h1>
 </header>
 <main id="checkoutpg">
 <?php
