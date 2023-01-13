@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>Rainy Bookstore</h1>
+        <h1><a href="index.php">Rainy Bookstore</a></h1>
     </header>
     <main class="container shop">
         <div class="container">
