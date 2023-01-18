@@ -6,7 +6,6 @@
     <title>Rainy Bookstore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <script src="assets/shop.js" async></script>
     <?php session_start();
     include_once("cart.php"); ?>
 </head>
